@@ -1,0 +1,8 @@
+.sidebar-main{
+    display: flex;
+}
+
+.main-container{
+    padding: 50px 80px;
+    width: 100%;
+}

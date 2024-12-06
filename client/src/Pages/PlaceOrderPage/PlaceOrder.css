@@ -1,0 +1,67 @@
+.place-orderpage{
+    display: flex;
+    justify-content: space-around;
+    
+    min-height: 80vh;
+    padding: 20px 30px;
+}
+
+.cart-total{
+   display: flex; 
+   gap: 250px;
+}
+
+.cart-total h3{
+    margin-top: 30px;
+}
+
+.cart-totals button{
+    background-color: brown;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.cart-totals button:hover{
+    background-color: black;
+    color: brown;
+}
+
+.delivery-address h3, .cart-totals h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.name-input, .city-input, .zipcode-input{
+    display: flex;
+}
+
+.email-input, .phone-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.address-info input{
+    padding: 15px;
+}
+
+@media(max-width:900px){
+    .place-orderpage{
+        flex-direction: column;
+        justify-content:flex-start;
+        gap:20px;
+        
+
+    }  
+    .name-input input, .city-input input, .zipcode-input input{
+        width: 100%;
+    }
+    .delivery-address, .cart-totals{
+        width: 100%;
+    }
+
+    .cart-total{
+        justify-content: space-between;
+    }
+    
+}

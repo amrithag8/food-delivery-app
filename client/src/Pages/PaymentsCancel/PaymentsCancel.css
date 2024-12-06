@@ -1,0 +1,32 @@
+.payment-cancel{
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+.cancel-msg{
+    box-shadow: 5px 10px 15px 2px;
+    min-height: 350px;
+    width: 350px;
+    
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cancel-msg h1{
+    font-size: 30px;
+}
+
+.cancel-msg i{
+    font-size: 150px;
+    color: tomato;
+}

@@ -1,0 +1,76 @@
+.orderspage-outer{
+    display: flex;
+}
+
+.orderspage-inner{
+    width: 100%;
+    padding: 50px 80px;
+    
+}
+.orders-list-outer{
+    margin-top: 10px;
+}
+.orders-list-inner{
+    padding: 10px 20px;
+    max-width: 100%;
+    border: 1px solid;
+    min-height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 0.5fr 0.5fr 2fr;
+
+    gap:8px;
+    /* align-items: center; */
+    place-items: center;
+    
+}
+
+.order-status select
+{
+    width: 120px;
+    outline: auto;
+    height: 30px;
+}
+
+.order-status select:focus
+{
+    outline: none;
+    border:1px solid;
+}
+
+.order-ID, 
+.order-name-address,
+.order-items,
+.order-price,
+.order-time,
+.order-status{
+    text-align: center;
+    /* width:20%; */
+}
+
+.order-name-address{
+    width: 230px;
+}
+
+
+@media (max-width:900px) {
+    .orders-list-inner{
+        grid-template-columns: 1fr 3fr 2fr;
+        row-gap: 5px;
+        
+    }
+
+    .orderspage-inner{
+        padding:50px 30px;
+}
+}
+
+@media (max-width:500px){
+    .orders-list-inner{
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .order-name-address{
+        max-width: 100%;
+    }
+}

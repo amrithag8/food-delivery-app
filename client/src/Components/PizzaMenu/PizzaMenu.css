@@ -1,0 +1,86 @@
+.PizzaMenu-img img{
+    max-width: 250px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.PizzaMenu-outer{
+    max-width: 250px;
+    min-height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    background-color: white;
+
+    
+}
+.name-desc{
+    padding:0px 20px;
+    
+    
+}
+.name-desc p{
+    color: gray;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.price-cart{
+    padding: 0px 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-cart button{
+    padding: 8px;
+    background-color: white;
+    border: 2px solid;
+    outline: none;
+    border-color: green;
+    cursor: pointer;
+    color: green;
+
+}
+
+.countButton
+{
+width: 120px;
+height: 30px;
+border: 1px solid;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+.changecountbtn{
+    width:40px;
+    height: 30px;
+    border-right: 1px solid;
+    border-left: 1px solid; 
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.countNumber{
+    text-align: center;
+    line-height: 30px;
+}
+
+
+
+@media (max-width:570px){
+    .PizzaMenu-outer{
+max-width: 350px;
+    }
+
+    .PizzaMenu-img img{
+        max-width: 350px;
+        height: 200px;
+    }
+}

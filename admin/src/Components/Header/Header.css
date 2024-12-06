@@ -1,0 +1,28 @@
+.Header-admin-outer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.admin-avatar img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.admin-avatar{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.admin-avatar h3{
+    cursor: pointer;
+}
+
+.Header-admin-title{
+    display: flex;
+    gap:5px;
+    flex-direction: column;
+    align-items: center;
+}

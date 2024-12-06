@@ -1,0 +1,44 @@
+.MenuItems-outer{
+    margin-top: 10px;
+    padding: 20px 70px;
+   
+}
+
+.pizza-menu-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   
+    place-content: center;
+    
+    row-gap: 50px;
+    column-gap: 40px;
+    width:fit-content;
+   margin:auto;
+    margin-top: 30px;
+    
+    
+    
+    
+}
+
+.MenuItems-outer h3{
+    text-align: center;
+}
+
+@media (max-width:1030px){
+    .pizza-menu-item{
+grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width:800px){
+    .pizza-menu-item{
+grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:570px){
+    .pizza-menu-item{
+grid-template-columns: 1fr;
+    }
+}
